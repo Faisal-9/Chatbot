@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnlineBuy</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="css/fontawesome-free-6.6.0-web/css/all.min.css"
+    />
+    <!-- <script
+      src="https://kit.fontawesome.com/de2ddc6df2.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    /> -->
+  </head>
+
+  <body>
+    <div>
+      <div id="chat-toggle">Chat</div>
+      <div id="chat-container">
+        <div id="chat-box"></div>
+        <div class="input-container">
+          <input type="text" id="user-input" placeholder="Ask a question..." />
+          <i class="fa-solid fa-arrow-up-from-bracket" id="send-icon"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Navigation -->
+      <nav id="navigation">
+        <div class="logo">
+          <h1>Sahibzada OnlineBuy</h1>
+        </div>
+        <ul>
+          <li><a id="home" onclick="navigate('home')">Home</a></li>
+          <li><a id="shopping" onclick="navigate('shopping')">Shops</a></li>
+          <li><a id="about" onclick="navigate('about')">About</a></li>
+          <li><a id="contact" onclick="navigate('contact')">Contact</a></li>
+          <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+        </ul>
+      </nav>
+
+      <!-- Main Page -->
+      <div class="main">
+        <div class="mainText">
+          <h2>Welcome to Sahibzada OnlineBuy</h2>
+          <h1 class="top">Super Value Deals</h1>
+          <h1>On All Products</h1>
+          <p>Explore the best deals on our wide range of products.</p>
+          <button>Explore Now</button>
+        </div>
+        <img src="images/pexels33.jpg" alt="Main Product Image" />
+      </div>
+
+      <!-- Men's Wear Section -->
+      <div class="shopping">
+        <div>
+          <div class="FutureBuy">
+            <div class="head">
+              <h1>OnlineBuy <span>Men's Wear</span></h1>
+            </div>
+            <div class="card">
+              <!-- Repeated Product Card -->
+              <div class="crd">
+                <img
+                  src="images/shrt1.jpg"
+                  alt="Men's Shirt"
+                  onclick="showProduct(this)"
+                />
+                <div class="crdText">
+                  <h4>TAGDO Men's Waffle Knitted Crew Neck Regular Fit Tees</h4>
+                  <p>699 Afg</p>
+                  <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  </div>
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+              <div class="crd">
+                <img
+                  src="images/shrt2.jpg"
+                  alt="Men's Shirt"
+                  onclick="show(this)"
+                />
+                <div class="crdText">
+                  <h4>
+                    Lymio Men T-Shirt || Regular Fit T-Shirt for Men || Printed
+                    T Shirt || T-Shirt (B-Black)
+                  </h4>
+                  <p>699 Afg</p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+              <div class="crd">
+                <img
+                  src="images/shrt3.jpg"
+                  alt="Men's Shirt"
+                  onclick="show(this)"
+                />
+                <div class="crdText">
+                  <h4>FUNKY RICH Funkyrich Textured Popcorn Shirts for Men</h4>
+                  <p>1699 Afg</p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+              <div class="crd">
+                <img
+                  src="images/shrt3.jpg"
+                  alt="Men's Shirt"
+                  onclick="show(this)"
+                />
+                <div class="crdText">
+                  <h4>FUNKY RICH Funkyrich Textured Popcorn Shirts for Men</h4>
+                  <p>1699 Afg</p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+              <div class="crd">
+                <img
+                  src="images/shrt3.jpg"
+                  alt="Men's Shirt"
+                  onclick="show(this)"
+                />
+                <div class="crdText">
+                  <h4>FUNKY RICH Funkyrich Textured Popcorn Shirts for Men</h4>
+                  <p>1699 Afg</p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+              <div class="crd">
+                <img
+                  src="images/shrt3.jpg"
+                  alt="Men's Shirt"
+                  onclick="show(this)"
+                />
+                <div class="crdText">
+                  <h4>FUNKY RICH Funkyrich Textured Popcorn Shirts for Men</h4>
+                  <p>1699 Afg</p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+              <!-- Add more product cards as needed -->
+            </div>
+          </div>
+
+          <!-- Women's Wear Section -->
+          <div class="FutureBuy">
+            <div class="head">
+              <h1>OnlineBuy <span>Women's Wear</span></h1>
+            </div>
+            <div class="card">
+              <!-- Repeated Product Card -->
+              <div class="crd">
+                <img
+                  src="images/shrt4.jpg"
+                  alt="Women's Wear"
+                  onclick="showProduct(this)"
+                />
+                <div class="crdText">
+                  <h4>
+                    Aahwan Women's & Girls' Solid Long Sleeve Slim Fit
+                    Top/T-Shirt
+                  </h4>
+                  <p>699 Afg</p>
+                  <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  </div>
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+              <div class="crd">
+                <img
+                  src="images/shrt5.jpg"
+                  alt="Women's Wear"
+                  onclick="show(this)"
+                />
+                <div class="crdText">
+                  <h4>Aahwan Women's Slim Fit Crop Top</h4>
+                  <p>699 Afg</p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+              <div class="crd">
+                <img
+                  src="images/shrt5.jpg"
+                  alt="Women's Wear"
+                  onclick="show(this)"
+                />
+                <div class="crdText">
+                  <h4>Aahwan Women's Slim Fit Crop Top</h4>
+                  <p>699 Afg</p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+              <div class="crd">
+                <img
+                  src="images/shrt6.jpg"
+                  alt="Women's Wear"
+                  onclick="show(this)"
+                />
+                <div class="crdText">
+                  <h4>Leriya Fashion Women's Top</h4>
+                  <p>699 Afg</p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+              <div class="crd">
+                <img
+                  src="images/shrt6.jpg"
+                  alt="Women's Wear"
+                  onclick="show(this)"
+                />
+                <div class="crdText">
+                  <h4>Leriya Fashion Women's Top</h4>
+                  <p>699 Afg</p>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+              <!-- Add more product cards as needed -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Us Section -->
+      <div class="about">
+        <div>
+
+        
+        <div class="aboutus">
+          <h1>#KnowUs</h1>
+          <p>Discover who we are and what drives us.</p>
+        </div>
+        <div class="me">
+          <img src="images/pexels44.jpg" alt="About Us Image" />
+          <div class="aboutText">
+            <h1>Who we are?</h1>
+            <p>
+              We are passionate about bringing the best products to our
+              customers. Our journey is driven by innovation and customer
+              satisfaction.
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="contact">
+        <div>
+          <div class="contactus">
+            <h1>#Let's Connect</h1>
+            <p>We would love to hear from you! Get in touch with us today.</p>
+          </div>
+          <div class="contactMe">
+            <div class="contactText">
+              <h1>Visit Our Office or Contact Us</h1>
+              <p>Address: Shahre Now, Kabul, Afghanistan</p>
+              <p>Email: support@SahibzadaOnlineBuy.com</p>
+              <p>Phone: +93 730000000</p>
+            </div>
+            <img src="images/map.jpg" alt="Map Image" />
+          </div>
+          <form id="contactForm">
+            <h1>Connect with Us</h1>
+            <label for="email">Any Query? Email here!!:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email's answering is our priority."
+              required
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <footer>
+        <div class="footerText">
+          <h2>Our Information</h2>
+          <p>About Us</p>
+          <p>Contact Us</p>
+          <p>Privacy Policy</p>
+          <p>Terms & Conditions</p>
+        </div>
+        <div class="footerText">
+          <h2>Online Shop</h2>
+          <p>Watch</p>
+          <p>Bag</p>
+          <p>Shoes</p>
+          <p>Dresses</p>
+        </div>
+        <div class="footerText">
+          <h2>Folow Us</h2>
+          <a href=""><img src="images/insta1.png" alt="Instagram Image" /></a>
+          <a href=""><img src="images/youtube.png" alt="Instagram Image" /></a>
+          <a href=""><img src="images/4138151.png" alt="Instagram Image" /></a>
+        </div>
+      </footer>
+    </div>
+    <script src="js/chatbot.js"></script>
+    <script src="js/chat-toggle.js"></script>
+  </body>
+</html>
