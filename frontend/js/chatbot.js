@@ -33,3 +33,20 @@ document.getElementById("send-icon").addEventListener("click", async () => {
     chatBox.scrollTop = chatBox.scrollHeight;
   }
 });
+
+
+const backendURL = "https://chatbot-backend.vercel.app";
+
+// Example API call
+fetch(`${backendURL}/api/chat`, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ message: userMessage }),
+})
+  .then((response) => response.json())
+  .then((data) => {
+    // Handle chatbot response
+  })
+  .catch((error) => {
+    console.error("Error communicating with the backend:", error);
+  });
